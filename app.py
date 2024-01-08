@@ -16,17 +16,16 @@ from utils import load_model, infer_uploaded_image, infer_uploaded_video, infer_
 
 # setting page layout
 st.set_page_config(
-    page_title="Interactive Interface for YOLOv8",
-    page_icon="🤖",
+    page_title="Colono-CAD",
     layout="wide",
     initial_sidebar_state="expanded"
     )
 
 # main page heading
-st.title("Interactive Interface for YOLOv8")
+st.title("Computer Aided Diagnosis for Colonoscopy")
 
 # sidebar
-st.sidebar.header("DL Model Config")
+st.sidebar.header("Model Config")
 
 # model options
 task_type = st.sidebar.selectbox(
